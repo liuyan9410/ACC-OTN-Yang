@@ -115,14 +115,6 @@ module acc-enum {
         }
     }
 
-    typedef osu-switch-type {
-        type enumeration {
-            enum OSU {
-                value 0;
-                description "OSU";
-            }
-        }
-    }
 
 
     typedef adaptation-type {
@@ -157,7 +149,7 @@ module acc-enum {
             enum GMP {
                 value 7;
             }
-            enum ODUij {
+            enum IMP+ODUij {
                 value 8;
             }
             enum ODUj21 {
@@ -165,6 +157,12 @@ module acc-enum {
             }
             enum ODUk {
                 value 10;
+            }
+            enum IMP {
+                value 11;
+            }
+            enum GMP+ {
+                value 12;
             }
         }
         description "Adaptation type";
